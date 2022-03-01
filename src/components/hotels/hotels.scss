@@ -1,0 +1,13 @@
+.hotels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.notAvailable {
+  
+  padding: 5rem;
+}
+.notAvailable h3 {
+  color: #8f0062;
+  padding: 10px;
+}

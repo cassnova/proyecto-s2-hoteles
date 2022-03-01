@@ -1,0 +1,109 @@
+.filters {
+  width: 100%;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%
+  );
+  background-image: linear-gradient(to top, #f7cffa, white);
+  background-color: #8f0062;
+  height: 280px;
+  color: white;
+}
+.filters h1 {
+  font-size: 25px;
+  padding-bottom: 20px;
+  color: black;
+}
+.filters-dates span {
+  color: black;
+  padding: 20px;
+}
+
+.filter-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  height: 190px;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: auto;
+}
+
+.filters-dates {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.filters-dates-inputs {
+  height: 30px;
+  width: 128px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.filters-dates-country {
+  height: 25px;
+  width: 140px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+}
+.filters-dates-prices {
+  height: 25px;
+  width: 135px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+}
+.filters-dates-sizes {
+  height: 25px;
+  width: 135px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+}
+.btnFilters {
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  color: #bd0081;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+  .filter-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .filters-dates {
+    display: flex;
+    flex-direction: column;
+  }
+  .filters-dates div {
+    margin: 15px;
+  }
+  .filters-dates div:first-child {
+    margin-top: 35px;
+  }
+  .btnFilters {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
